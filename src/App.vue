@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <Particles></Particles>
-    <div class="s">sds</div>
   </div>
 </template>
 
