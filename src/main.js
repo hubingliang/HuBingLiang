@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import './assets/index.css'
-
+import './assets/animate.css'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

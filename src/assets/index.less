@@ -1,17 +1,12 @@
-/* ---- reset ---- */
-
-body {
+*{
     margin: 0;padding: 0;
-    font:normal 75% Arial, Helvetica, sans-serif;
-  }
+    box-sizing: border-box;
+}
   
   canvas {
     display: block;
     vertical-align: bottom;
   }
-  
-  /* ---- particles.js container ---- */
-  
   #particles-js {
     position: absolute;
     width: 100%;
@@ -23,8 +18,7 @@ body {
     background-position: 50% 50%;
     z-index: -1;
   }
-  
-  /* ---- stats.js ---- */
+
   
   .count-particles{
     background: #000022;
@@ -59,3 +53,91 @@ body {
   .count-particles{
     border-radius: 0 0 3px 3px;
   }
+
+html{
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+  body{
+    width: 100vw;
+    height: 100vh;
+    #app{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      .home{
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container{
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          .name{
+            color: #9B957C;
+            font-size: 66px;
+            font-family: Verdana;
+            margin-bottom: 20px;
+            font-weight: normal;
+          }
+          @keyframes typing {
+            from { width: 0 }
+          }
+        
+          @keyframes caret {
+              50% { border-right-color: transparent; }
+          }
+          p{
+            font-family: Verdana;
+            font-size: 16px;
+            color: white;
+            width: 63ch;
+            white-space: nowrap;
+            overflow: hidden;
+            //border-right: .05em solid;
+            //animation: typing 8s steps(63),
+                      //caret 1s steps(1) ;
+          }
+          .nav{
+            margin-top: 20px;
+            .icon{
+              border: 1px solid #9B957C;
+              border-radius: 50%;
+              padding: 5px;
+              fill: #9B957C;
+              width: 40px;
+              height: 40px;
+              margin: 0 10px;
+            }
+            .icon:hover{
+              padding: 4px;
+            }
+          }
+        }
+      }
+      nav{
+        position: absolute;
+        z-index: 5;
+        right: 40px;
+        .nav-item{
+          overflow: hidden;
+          width: 14px;
+          height: 14px;
+          border: 1px solid #ddd;
+          border-radius: 50%;
+          margin: 20px 0 ;
+        }
+        .nav-item:hover{
+          background: #ddd;
+        }
+      }
+    }
+  }
+
+}

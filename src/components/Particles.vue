@@ -1,6 +1,20 @@
 <template>
-  <div id="particles-js">
-  </div>
+    <div class="home">
+        <div id="particles-js">
+        </div>
+        <div class="container animated fadeIn">
+            <h1 class="name">Hu Bingliang</h1>
+            <p>Replace the stars and rivers in the body with unlimited methods for the future.</p>
+            <div class="nav">
+                <svg class="icon" aria-hidden="true" >
+                    <use xlink:href="#icon-github1"></use>
+                </svg>
+                <svg class="icon" aria-hidden="true" >
+                    <use xlink:href="#icon-blog"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
