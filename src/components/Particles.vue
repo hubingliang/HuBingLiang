@@ -1,5 +1,5 @@
 <template>
-    <div class="home">
+    <div class="home animated">
         <div id="particles-js">
         </div>
         <div class="container animated fadeIn">

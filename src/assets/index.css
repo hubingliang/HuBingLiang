@@ -47,6 +47,28 @@ canvas {
 .count-particles {
   border-radius: 0 0 3px 3px;
 }
+.move {
+  animation: mymove .1s;
+}
+@keyframes mymove {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100vh);
+  }
+}
+.moveback {
+  animation: mymoveback 2s;
+}
+@keyframes mymoveback {
+  from {
+    transform: translateY(-100vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 html {
   width: 100vw;
   height: 100vh;
@@ -70,6 +92,7 @@ html body #app .home {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 5;
 }
 html body #app .home .container {
   display: flex;
@@ -119,7 +142,7 @@ html body #app .home .container .nav .icon:hover {
 }
 html body #app nav {
   position: absolute;
-  z-index: 5;
+  z-index: 10;
   right: 40px;
 }
 html body #app nav .nav-item {
@@ -132,4 +155,93 @@ html body #app nav .nav-item {
 }
 html body #app nav .nav-item:hover {
   background: #ddd;
+}
+html body #app .confession {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 4;
+  background: #132c33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+html body #app .confession .moveleft {
+  animation: moveleft 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes moveleft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-25px);
+  }
+}
+html body #app .confession .moveright {
+  animation: moveright 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes moveright {
+  from {
+    transform: translateX(-25px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+html body #app .confession .computer {
+  width: 50vw;
+  position: absolute;
+  z-index: -1;
+}
+html body #app .confession .page {
+  width: 38vw;
+}
+html body #app .confession .mask {
+  display: flex;
+  justify-content: center;
+  padding-left: 40px;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50vw;
+  height: 100vh;
+  background: rgba(104, 125, 147, 0.8);
+  font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+}
+html body #app .confession .mask .container {
+  overflow: hidden;
+}
+html body #app .confession .mask .container h2 {
+  color: white;
+  font-size: 60px;
+  font-weight: normal;
+}
+html body #app .confession .mask .container .frame {
+  color: #ddd;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  width: 60px;
+}
+html body #app .confession .mask .container .description {
+  padding: 20px 0;
+  color: #ddd;
+}
+html body #app .confession .mask .container button {
+  outline: none;
+  font-family: Verdana;
+  width: 160px;
+  list-style: none;
+  background: white;
+  padding: 10px;
+  border: none;
+  border-radius: 16px;
+  color: #333;
+  border: 1px solid white;
+}
+html body #app .confession .mask .container button:hover {
+  background: none;
+  color: #333;
 }

@@ -53,6 +53,24 @@
   .count-particles{
     border-radius: 0 0 3px 3px;
   }
+  .move{
+    @keyframes mymove
+    {
+    from {transform: translateY(0)}
+    to {transform: translateY(-100vh)}
+    }
+    animation: mymove .1s;
+    //transform: translateY(-100vh);
+  }
+  .moveback{
+    @keyframes mymoveback
+    {
+    from {transform: translateY(-100vh)}
+    to {transform: translateY(0)}
+    }
+    animation: mymoveback 2s;
+    //transform: translateY(-100vh);
+  }
 
 html{
   width: 100vw;
@@ -74,6 +92,7 @@ html{
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 5;
         .container{
           display: flex;
           justify-content: center;
@@ -123,7 +142,7 @@ html{
       }
       nav{
         position: absolute;
-        z-index: 5;
+        z-index: 10;
         right: 40px;
         .nav-item{
           overflow: hidden;
@@ -135,6 +154,89 @@ html{
         }
         .nav-item:hover{
           background: #ddd;
+        }
+      }
+      .confession{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: 4;
+        background: rgb(19, 44, 51);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .moveleft{
+          @keyframes moveleft
+          {
+          from {transform: translateX(0)}
+          to {transform: translateX(-25px)}
+          }
+          animation: moveleft 1s;
+          animation-fill-mode: forwards;
+        }
+        .moveright{
+          @keyframes moveright
+          {
+          from {transform: translateX(-25px)}
+          to {transform: translateX(0)}
+          }
+          animation: moveright 1s;
+          animation-fill-mode: forwards;
+        }
+        .computer{
+          width: 50vw;
+          position: absolute;
+          z-index: -1;
+        }
+        .page{
+          width: 38vw;
+        }
+        .mask{
+          display: flex;
+          justify-content: center;
+          padding-left: 40px;
+          flex-direction: column;
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 50vw;
+          height: 100vh;
+          background: rgba(104,125,147,0.8);
+          font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+          .container{
+            overflow: hidden;
+            h2{
+              color: white;
+              font-size: 60px;
+              font-weight: normal;
+            }
+            .frame{
+              color: #ddd;
+              padding: 20px 0;
+              border-bottom: 1px solid #ddd;
+              width: 60px;
+            }
+            .description{
+              padding: 20px 0;
+              color: #ddd;
+            }
+            button{
+              outline: none;
+              font-family: Verdana;
+              width: 160px;
+              list-style: none;
+              background: white;
+              padding: 10px;
+              border: none;
+              border-radius: 16px;
+              color: #333;
+              border: 1px solid white;
+            }
+            button:hover{
+              background: none;
+              color: #333;
+            }
+          }
         }
       }
     }
