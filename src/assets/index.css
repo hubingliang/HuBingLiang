@@ -191,12 +191,12 @@ html body #app .confession .moveright {
   }
 }
 html body #app .confession .computer {
-  width: 50vw;
+  width: 60vw;
   position: absolute;
   z-index: -1;
 }
 html body #app .confession .page {
-  width: 38vw;
+  width: 45vw;
 }
 html body #app .confession .mask {
   display: flex;
@@ -208,7 +208,7 @@ html body #app .confession .mask {
   top: 0;
   width: 50vw;
   height: 100vh;
-  background: rgba(104, 125, 147, 0.8);
+  background: rgba(35, 50, 61, 0.9);
   font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
 }
 html body #app .confession .mask .container {
@@ -216,18 +216,21 @@ html body #app .confession .mask .container {
 }
 html body #app .confession .mask .container h2 {
   color: white;
-  font-size: 60px;
+  font-size: 55px;
   font-weight: normal;
 }
 html body #app .confession .mask .container .frame {
   color: #ddd;
   padding: 20px 0;
   border-bottom: 1px solid #ddd;
-  width: 60px;
+  width: 200px;
 }
 html body #app .confession .mask .container .description {
   padding: 20px 0;
-  color: #ddd;
+  color: white;
+  width: 450px;
+  line-height: 22px;
+  margin-bottom: 20px;
 }
 html body #app .confession .mask .container button {
   outline: none;
