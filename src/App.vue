@@ -87,7 +87,7 @@ export default {
         class:'todo',
         name:'待办事项应用',
         technologyStack:'Vue ES6 Webpack Less',
-        description:'一款基于LeanCloud为后台的表白墙网站，以Vue为框架，可登陆和注册，并提供发帖（图片上传）、评论、点赞等功能。',
+        description:'基于Vue做的一个待办事项单页应用，原生js生成日历，可对当月事项做一个简单的管理。',
         url:'https://hubingliang.github.io/ToDo/dist/',
         computer:'../static/computer.png',
         page:'../static/todo.png'
@@ -96,7 +96,7 @@ export default {
         class:'resume',
         name:'在线简历生成器',
         technologyStack:'Vue ES6 Webpack Less',
-        description:'一款基于LeanCloud为后台的表白墙网站，以Vue为框架，可登陆和注册，并提供发帖（图片上传）、评论、点赞等功能。',
+        description:'在线的简历生成器，提供在线预览功能。',
         url:'https://hubingliang.github.io/vue-resumer/dist/',
         computer:'../static/computer.png',
         page:'../static/resume.png'
@@ -104,8 +104,8 @@ export default {
       music:{
         class:'music',
         name:'手机端网易云',
-        technologyStack:'Vue ES6 Webpack Less',
-        description:'一款基于LeanCloud为后台的表白墙网站，以Vue为框架，可登陆和注册，并提供发帖（图片上传）、评论、点赞等功能。',
+        technologyStack:'jQuery less gulp HTML5 CSS3',
+        description:'用jQuery写的手机端网易云，主页面、播放页面、热歌榜、搜索页面（可检索）。提供十首歌的播放。',
         url:'https://hubingliang.github.io/NetEase-cloud-music/dist/',
         computer:'../static/iphone.png',
         page:'../static/music.png'
@@ -113,8 +113,8 @@ export default {
       clock:{
         class:'clock',
         name:'原生JS实现时钟',
-        technologyStack:'Vue ES6 Webpack Less',
-        description:'一款基于LeanCloud为后台的表白墙网站，以Vue为框架，可登陆和注册，并提供发帖（图片上传）、评论、点赞等功能。',
+        technologyStack:'html css js',
+        description:'用原生js实现一个时钟。',
         url:'https://hubingliang.github.io/project/clock/clock.html',
         computer:'../static/computer.png',
         page:'../static/clock.png'

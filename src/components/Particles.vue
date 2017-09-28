@@ -6,10 +6,10 @@
             <h1 class="name">Hu Bingliang</h1>
             <p>Replace the stars and rivers in the body with unlimited methods for the future.</p>
             <div class="nav">
-                <svg class="icon" aria-hidden="true" >
+                <svg class="icon" aria-hidden="true" @click="jump('https://github.com/hubingliang')">
                     <use xlink:href="#icon-github1"></use>
                 </svg>
-                <svg class="icon" aria-hidden="true" >
+                <svg class="icon" aria-hidden="true" @click="jump('http://www.jianshu.com/u/7cff123bc7d8')">
                     <use xlink:href="#icon-blog"></use>
                 </svg>
             </div>
@@ -137,6 +137,9 @@ export default {
           },
           "retina_detect": true
         });
+      },
+      jump:function(url){
+          window.open(url)
       }
   }
 }
