@@ -1,13 +1,13 @@
 <template>
   <div id="app" >
     <nav class="animated fadeIn">
-      <div class="nav-item" v-bind:class="{active: ParticlesShow}" @click="ParticlesShow = true,confessionShow = true,todoShow = true,resumeShow = true,musicShow = true,clockShow=true"></div>
-      <div class="nav-item" @click="confessionShow = true,ParticlesShow = false,todoShow = true,resumeShow = true,musicShow = true,clockShow=true"></div>
-      <div class="nav-item" @click="confessionShow = true,ParticlesShow = false,todoShow = true,resumeShow = false,musicShow = true,clockShow=true"></div>
-      <div class="nav-item" @click="confessionShow = true,ParticlesShow = false,todoShow= false,resumeShow = false,musicShow = true,clockShow=true"></div>
-      <div class="nav-item" @click="confessionShow = true,ParticlesShow = false,todoShow= false,resumeShow = false,musicShow = false,clockShow=true"></div>
-      <div class="nav-item" @click="confessionShow = false,ParticlesShow = false,todoShow= false,resumeShow = false,musicShow = false,clockShow = true"></div>
-      <div class="nav-item"></div>
+      <div class="nav-item" v-bind:class="{active: ParticlesShow}" @click="ParticlesShow = true,confessionShow = true,todoShow = true,resumeShow = true,musicShow = true,clockShow=true,ResumeShow = true"></div>
+      <div class="nav-item" @click="confessionShow = true,ParticlesShow = false,todoShow = true,resumeShow = true,musicShow = true,clockShow=true,ResumeShow= true"></div>
+      <div class="nav-item" @click="confessionShow = true,ParticlesShow = false,todoShow = true,resumeShow = false,musicShow = true,clockShow = true,ResumeShow = false"></div>
+      <div class="nav-item" @click="confessionShow = true,ParticlesShow = false,todoShow= false,resumeShow = false,musicShow = true,clockShow=true,ResumeShow= true"></div>
+      <div class="nav-item" @click="confessionShow = true,ParticlesShow = false,todoShow= false,resumeShow = false,musicShow = false,clockShow=true,ResumeShow= true"></div>
+      <div class="nav-item" @click="confessionShow = false,ParticlesShow = false,todoShow= false,resumeShow = false,musicShow = false,clockShow = true,ResumeShow= true"></div>
+      <div class="nav-item" @click="confessionShow = false,ParticlesShow = false,todoShow= false,resumeShow = false,musicShow = false,clockShow = false,ResumeShow= true"></div>
     </nav>
 
     <transition
@@ -52,7 +52,12 @@
       <Project v-show="clockShow" v-bind:project="clock"></Project>
     </transition>
 
-    
+    <transition
+      name="custom-classes-transition"
+      enter-active-class="animated slideInDown"
+      leave-active-class="animated slideOutUp">
+      <Resume v-show="ResumeShow"></Resume>
+    </transition>
 
     
 
@@ -64,6 +69,7 @@
 <script>
 import Particles from './components/Particles'
 import Project from './components/Project'
+import Resume from './components/Resume'
 
 export default {
   data(){
@@ -74,6 +80,7 @@ export default {
       resumeShow:true,
       musicShow:true,
       clockShow:true,
+      ResumeShow:true,
       confession:{
         class:'confession',
         name:'天农，表白，墙',
@@ -123,7 +130,7 @@ export default {
   },
   name: 'app',
   components: {
-    Particles,Project
+    Particles,Project,Resume
   }
 }
 </script>

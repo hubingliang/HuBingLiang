@@ -168,7 +168,7 @@ html body #app nav .active {
 html body #app nav .nav-item:hover {
   background: #ddd;
 }
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
   html body #app nav {
     display: flex;
     justify-content: center;
@@ -258,7 +258,7 @@ html body #app .confession .moveright {
 }
 html body #app .confession .computer {
   width: 60vw;
-  position: relative;
+  position: absolute;
   z-index: -1;
 }
 html body #app .confession .page {
@@ -321,7 +321,7 @@ html body #app .confession .mask .container button:hover {
   background: none;
   color: white;
 }
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
   html body #app .confession .computer {
     width: 90vw;
   }
@@ -468,7 +468,7 @@ html body #app .todo .mask .container button:hover {
   background: none;
   color: white;
 }
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
   html body #app .todo .computer {
     width: 90vw;
   }
@@ -615,7 +615,7 @@ html body #app .resume .mask .container button:hover {
   background: none;
   color: white;
 }
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
   html body #app .resume .computer {
     width: 90vw;
   }
@@ -762,7 +762,7 @@ html body #app .music .mask .container button:hover {
   background: none;
   color: white;
 }
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
   html body #app .music .mask .container h2 {
     font-size: 40px;
   }
@@ -903,7 +903,7 @@ html body #app .clock .mask .container button:hover {
   background: none;
   color: white;
 }
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
   html body #app .clock .computer {
     width: 90vw;
   }
@@ -916,4 +916,112 @@ html body #app .clock .mask .container button:hover {
   html body #app .clock .mask .container .description {
     width: 300px;
   }
+}
+html body #app .table {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 4;
+  background: #2d363f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: #bfbfbf;
+  font-family: Verdana;
+}
+html body #app .table .resume {
+  width: 40vw;
+  height: 90vh;
+  padding: 40px;
+  background: #ebebeb;
+  display: flex;
+  flex-direction: column;
+}
+html body #app .table .resume .name {
+  padding: 10px 20px;
+  border: 1px solid #333;
+}
+html body #app .table .resume .job {
+  margin: 20px 0;
+}
+html body #app .table .resume img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+html body #app .table .resume .container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 20px;
+}
+html body #app .table .resume .container .left {
+  width: 50%;
+  padding-right: 20px;
+  border-right: 1px solid ;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+html body #app .table .resume .container .left h4 {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 20px;
+}
+html body #app .table .resume .container .right {
+  width: 50%;
+  padding-left: 20px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+html body #app .table .resume .container .right h4 {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+html body #app .table .resume .container .right span {
+  width: 200px;
+  height: 1px;
+  background: #bfbfbf;
+  margin: 10px 0;
+  overflow: hidden;
+}
+html body #app .table .resume .container .right .html .degree {
+  width: 160px;
+  background: black;
+  height: 2px;
+}
+html body #app .table .resume .container .right .css .degree {
+  width: 180px;
+  background: black;
+  height: 2px;
+}
+html body #app .table .resume .container .right .js .degree {
+  width: 150px;
+  background: black;
+  height: 2px;
+}
+html body #app .table .resume .container .right .vue .degree {
+  width: 160px;
+  background: black;
+  height: 1px;
+}
+html body #app .table .resume .container .right .jquery .degree {
+  width: 180px;
+  background: black;
+  height: 2px;
+}
+html body #app .table .resume .container .right .webpack .degree {
+  width: 180px;
+  background: black;
+  height: 2px;
+}
+html body #app .table .resume .container .right .git .degree {
+  width: 180px;
+  background: black;
+  height: 2px;
 }
