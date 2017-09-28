@@ -258,10 +258,10 @@ html body #app .confession .moveright {
 }
 html body #app .confession .computer {
   width: 60vw;
-  position: absolute;
+  position: relative;
+  z-index: -1;
 }
 html body #app .confession .page {
-  position: absolute;
   width: 46vw;
 }
 html body #app .confession .mask {
