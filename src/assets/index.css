@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 canvas {
@@ -60,22 +61,41 @@ html body {
 html body #app {
   width: 100vw;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 html body #app .home {
   position: absolute;
   height: 100vh;
   width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   z-index: 10;
 }
 html body #app .home .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 html body #app .home .container .name {
@@ -85,9 +105,19 @@ html body #app .home .container .name {
   margin-bottom: 20px;
   font-weight: normal;
 }
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+}
 @keyframes typing {
   from {
     width: 0;
+  }
+}
+@-webkit-keyframes caret {
+  50% {
+    border-right-color: transparent;
   }
 }
 @keyframes caret {
@@ -144,31 +174,65 @@ html body #app .confession {
   position: absolute;
   z-index: 6;
   background: #015e7f;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 html body #app .confession .moveleft {
+  -webkit-animation: moveleft 1s;
   animation: moveleft 1s;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-@keyframes moveleft {
+@-webkit-keyframes moveleft {
   from {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   to {
+    -webkit-transform: translateX(-25px);
+    transform: translateX(-25px);
+  }
+}
+@keyframes moveleft {
+  from {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-25px);
     transform: translateX(-25px);
   }
 }
 html body #app .confession .moveright {
+  -webkit-animation: moveright 1s;
   animation: moveright 1s;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-@keyframes moveright {
+@-webkit-keyframes moveright {
   from {
+    -webkit-transform: translateX(-25px);
     transform: translateX(-25px);
   }
   to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes moveright {
+  from {
+    -webkit-transform: translateX(-25px);
+    transform: translateX(-25px);
+  }
+  to {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
@@ -181,9 +245,16 @@ html body #app .confession .page {
   width: 46vw;
 }
 html body #app .confession .mask {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding-left: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   position: absolute;
   right: 0;
@@ -236,31 +307,65 @@ html body #app .todo {
   position: absolute;
   z-index: 8;
   background: #f9f9f9;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 html body #app .todo .moveleft {
+  -webkit-animation: moveleft 1s;
   animation: moveleft 1s;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-@keyframes moveleft {
+@-webkit-keyframes moveleft {
   from {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   to {
+    -webkit-transform: translateX(-25px);
+    transform: translateX(-25px);
+  }
+}
+@keyframes moveleft {
+  from {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-25px);
     transform: translateX(-25px);
   }
 }
 html body #app .todo .moveright {
+  -webkit-animation: moveright 1s;
   animation: moveright 1s;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-@keyframes moveright {
+@-webkit-keyframes moveright {
   from {
+    -webkit-transform: translateX(-25px);
     transform: translateX(-25px);
   }
   to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes moveright {
+  from {
+    -webkit-transform: translateX(-25px);
+    transform: translateX(-25px);
+  }
+  to {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
@@ -273,9 +378,16 @@ html body #app .todo .page {
   width: 46vw;
 }
 html body #app .todo .mask {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding-left: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   position: absolute;
   right: 0;
@@ -328,31 +440,65 @@ html body #app .resume {
   position: absolute;
   z-index: 9;
   background: #1f2a30;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 html body #app .resume .moveleft {
+  -webkit-animation: moveleft 1s;
   animation: moveleft 1s;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-@keyframes moveleft {
+@-webkit-keyframes moveleft {
   from {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   to {
+    -webkit-transform: translateX(-25px);
+    transform: translateX(-25px);
+  }
+}
+@keyframes moveleft {
+  from {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-25px);
     transform: translateX(-25px);
   }
 }
 html body #app .resume .moveright {
+  -webkit-animation: moveright 1s;
   animation: moveright 1s;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-@keyframes moveright {
+@-webkit-keyframes moveright {
   from {
+    -webkit-transform: translateX(-25px);
     transform: translateX(-25px);
   }
   to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes moveright {
+  from {
+    -webkit-transform: translateX(-25px);
+    transform: translateX(-25px);
+  }
+  to {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
@@ -365,9 +511,16 @@ html body #app .resume .page {
   width: 46vw;
 }
 html body #app .resume .mask {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding-left: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   position: absolute;
   right: 0;
@@ -420,31 +573,65 @@ html body #app .music {
   position: absolute;
   z-index: 7;
   background: #1f2a30;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 html body #app .music .moveleft {
+  -webkit-animation: moveleft 1s;
   animation: moveleft 1s;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-@keyframes moveleft {
+@-webkit-keyframes moveleft {
   from {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   to {
+    -webkit-transform: translateX(-25px);
+    transform: translateX(-25px);
+  }
+}
+@keyframes moveleft {
+  from {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-25px);
     transform: translateX(-25px);
   }
 }
 html body #app .music .moveright {
+  -webkit-animation: moveright 1s;
   animation: moveright 1s;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-@keyframes moveright {
+@-webkit-keyframes moveright {
   from {
+    -webkit-transform: translateX(-25px);
     transform: translateX(-25px);
   }
   to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes moveright {
+  from {
+    -webkit-transform: translateX(-25px);
+    transform: translateX(-25px);
+  }
+  to {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
@@ -456,9 +643,16 @@ html body #app .music .page {
   height: 66vh;
 }
 html body #app .music .mask {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding-left: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   position: absolute;
   right: 0;
@@ -511,31 +705,65 @@ html body #app .clock {
   position: absolute;
   z-index: 5;
   background: #2d363f;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 html body #app .clock .moveleft {
+  -webkit-animation: moveleft 1s;
   animation: moveleft 1s;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-@keyframes moveleft {
+@-webkit-keyframes moveleft {
   from {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   to {
+    -webkit-transform: translateX(-25px);
+    transform: translateX(-25px);
+  }
+}
+@keyframes moveleft {
+  from {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-25px);
     transform: translateX(-25px);
   }
 }
 html body #app .clock .moveright {
+  -webkit-animation: moveright 1s;
   animation: moveright 1s;
+  -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
-@keyframes moveright {
+@-webkit-keyframes moveright {
   from {
+    -webkit-transform: translateX(-25px);
     transform: translateX(-25px);
   }
   to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes moveright {
+  from {
+    -webkit-transform: translateX(-25px);
+    transform: translateX(-25px);
+  }
+  to {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
@@ -548,9 +776,16 @@ html body #app .clock .page {
   width: 46vw;
 }
 html body #app .clock .mask {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   padding-left: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   position: absolute;
   right: 0;
