@@ -259,9 +259,9 @@ html body #app .confession .moveright {
 html body #app .confession .computer {
   width: 60vw;
   position: absolute;
-  z-index: -1;
 }
 html body #app .confession .page {
+  position: absolute;
   width: 46vw;
 }
 html body #app .confession .mask {
@@ -330,6 +330,9 @@ html body #app .confession .mask .container button:hover {
   }
   html body #app .confession .mask .container h2 {
     font-size: 40px;
+  }
+  html body #app .confession .mask .container .description {
+    width: 300px;
   }
 }
 html body #app .todo {
@@ -475,6 +478,9 @@ html body #app .todo .mask .container button:hover {
   html body #app .todo .mask .container h2 {
     font-size: 40px;
   }
+  html body #app .todo .mask .container .description {
+    width: 300px;
+  }
 }
 html body #app .resume {
   width: 100vw;
@@ -619,6 +625,9 @@ html body #app .resume .mask .container button:hover {
   html body #app .resume .mask .container h2 {
     font-size: 40px;
   }
+  html body #app .resume .mask .container .description {
+    width: 300px;
+  }
 }
 html body #app .music {
   width: 100vw;
@@ -752,6 +761,14 @@ html body #app .music .mask .container button {
 html body #app .music .mask .container button:hover {
   background: none;
   color: white;
+}
+@media screen and (min-width: 500px) {
+  html body #app .music .mask .container h2 {
+    font-size: 40px;
+  }
+  html body #app .music .mask .container .description {
+    width: 300px;
+  }
 }
 html body #app .clock {
   width: 100vw;
@@ -895,5 +912,8 @@ html body #app .clock .mask .container button:hover {
   }
   html body #app .clock .mask .container h2 {
     font-size: 40px;
+  }
+  html body #app .clock .mask .container .description {
+    width: 300px;
   }
 }

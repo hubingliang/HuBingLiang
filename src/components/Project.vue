@@ -1,7 +1,8 @@
 <template>
   <div v-bind:class="project.class">
-      <img v-bind:src="project.page"  class="page" v-bind:class="{moveleft:moveleft,moveright:moveright}"/>
       <img v-bind:src="project.computer"  class="computer" v-bind:class="{moveleft:moveleft,moveright:moveright}"/>
+      <img v-bind:src="project.page"  class="page" v-bind:class="{moveleft:moveleft,moveright:moveright}"/>
+      
       <div class="mask">
           <div class="container">
             <h2 class="animated fadeInLeft">{{project.name}}</h2>
