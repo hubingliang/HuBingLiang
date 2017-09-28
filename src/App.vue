@@ -1,6 +1,6 @@
 <template>
   <div id="app" >
-    <nav class="animated fadeInRight">
+    <nav class="animated fadeIn">
       <div class="nav-item" v-bind:class="{active: ParticlesShow}" @click="ParticlesShow = true,confessionShow = true,todoShow = true,resumeShow = true,musicShow = true,clockShow=true"></div>
       <div class="nav-item" @click="confessionShow = true,ParticlesShow = false,todoShow = true,resumeShow = true,musicShow = true,clockShow=true"></div>
       <div class="nav-item" @click="confessionShow = true,ParticlesShow = false,todoShow = true,resumeShow = false,musicShow = true,clockShow=true"></div>

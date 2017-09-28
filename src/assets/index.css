@@ -168,6 +168,26 @@ html body #app nav .active {
 html body #app nav .nav-item:hover {
   background: #ddd;
 }
+@media screen and (min-width: 500px) {
+  html body #app nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    right: 0;
+    position: absolute;
+    bottom: 40px;
+    z-index: 11;
+  }
+  html body #app nav .nav-item {
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 0 20px ;
+  }
+}
 html body #app .confession {
   width: 100vw;
   height: 100vh;
@@ -300,6 +320,17 @@ html body #app .confession .mask .container button {
 html body #app .confession .mask .container button:hover {
   background: none;
   color: white;
+}
+@media screen and (min-width: 500px) {
+  html body #app .confession .computer {
+    width: 90vw;
+  }
+  html body #app .confession .page {
+    width: 68vw;
+  }
+  html body #app .confession .mask .container h2 {
+    font-size: 40px;
+  }
 }
 html body #app .todo {
   width: 100vw;
@@ -434,6 +465,17 @@ html body #app .todo .mask .container button:hover {
   background: none;
   color: white;
 }
+@media screen and (min-width: 500px) {
+  html body #app .todo .computer {
+    width: 90vw;
+  }
+  html body #app .todo .page {
+    width: 68vw;
+  }
+  html body #app .todo .mask .container h2 {
+    font-size: 40px;
+  }
+}
 html body #app .resume {
   width: 100vw;
   height: 100vh;
@@ -567,6 +609,17 @@ html body #app .resume .mask .container button:hover {
   background: none;
   color: white;
 }
+@media screen and (min-width: 500px) {
+  html body #app .resume .computer {
+    width: 90vw;
+  }
+  html body #app .resume .page {
+    width: 68vw;
+  }
+  html body #app .resume .mask .container h2 {
+    font-size: 40px;
+  }
+}
 html body #app .music {
   width: 100vw;
   height: 100vh;
@@ -636,6 +689,7 @@ html body #app .music .moveright {
   }
 }
 html body #app .music .computer {
+  height: 85vh;
   position: absolute;
   z-index: -1;
 }
@@ -831,4 +885,15 @@ html body #app .clock .mask .container button {
 html body #app .clock .mask .container button:hover {
   background: none;
   color: white;
+}
+@media screen and (min-width: 500px) {
+  html body #app .clock .computer {
+    width: 90vw;
+  }
+  html body #app .clock .page {
+    width: 68vw;
+  }
+  html body #app .clock .mask .container h2 {
+    font-size: 40px;
+  }
 }
