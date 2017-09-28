@@ -174,6 +174,9 @@ html body #app .confession .moveright {
 html body #app .confession .computer {
   width: 60vw;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: -1;
 }
 html body #app .confession .page {
@@ -266,6 +269,9 @@ html body #app .todo .moveright {
 html body #app .todo .computer {
   width: 60vw;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: -1;
 }
 html body #app .todo .page {
@@ -358,6 +364,9 @@ html body #app .resume .moveright {
 html body #app .resume .computer {
   width: 60vw;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: -1;
 }
 html body #app .resume .page {
@@ -448,6 +457,9 @@ html body #app .music .moveright {
   }
 }
 html body #app .music .computer {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   position: absolute;
   z-index: -1;
 }
@@ -541,6 +553,9 @@ html body #app .clock .moveright {
 html body #app .clock .computer {
   width: 60vw;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: -1;
 }
 html body #app .clock .page {
