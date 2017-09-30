@@ -173,11 +173,10 @@ html body #app nav .nav-item:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    right: 0;
     position: absolute;
     bottom: 40px;
     z-index: 11;
+    display: none;
   }
   html body #app nav .nav-item {
     overflow: hidden;
