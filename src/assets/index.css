@@ -369,7 +369,7 @@ html body #app .confession .mask .container button:hover {
   }
   html body #app .confession .mask .container button {
     padding: 5px;
-    font-size: 12px;
+    font-size: 10px;
     width: 120px;
   }
 }
@@ -541,7 +541,7 @@ html body #app .todo .mask .container button:hover {
   }
   html body #app .todo .mask .container button {
     padding: 5px;
-    font-size: 12px;
+    font-size: 10px;
     width: 120px;
   }
 }
@@ -713,7 +713,7 @@ html body #app .resume .mask .container button:hover {
   }
   html body #app .resume .mask .container button {
     padding: 5px;
-    font-size: 12px;
+    font-size: 10px;
     width: 120px;
   }
 }
@@ -879,7 +879,7 @@ html body #app .music .mask .container button:hover {
   }
   html body #app .music .mask .container button {
     padding: 5px;
-    font-size: 12px;
+    font-size: 10px;
     width: 120px;
   }
 }
@@ -1051,7 +1051,7 @@ html body #app .clock .mask .container button:hover {
   }
   html body #app .clock .mask .container button {
     padding: 5px;
-    font-size: 12px;
+    font-size: 10px;
     width: 120px;
   }
 }
