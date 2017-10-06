@@ -1265,6 +1265,10 @@ html body #app .table .resume .container .right .git .degree {
 }
 @media screen and (max-width: 500px) {
   html body #app .table .resume {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     padding: 20px;
