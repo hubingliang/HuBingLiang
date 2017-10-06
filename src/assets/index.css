@@ -1010,6 +1010,12 @@ html body #app .clock .mask .container button:hover {
   html body #app .clock {
     font-size: 12px;
   }
+  html body #app .clock .computer {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+  }
   html body #app .clock .mask {
     padding: 0 15px;
   }
@@ -1235,6 +1241,8 @@ html body #app .table .resume .container .right .git .degree {
 }
 @media screen and (max-width: 500px) {
   html body #app .table .resume {
+    width: 100vw;
+    height: 100vh;
     padding: 20px;
   }
   html body #app .table .resume img {
