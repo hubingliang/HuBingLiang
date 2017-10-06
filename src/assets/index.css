@@ -148,6 +148,17 @@ html body #app .home .container .nav .icon {
 html body #app .home .container .nav .icon:hover {
   padding: 4px;
 }
+@media screen and (max-width: 500px) {
+  html body #app .home .container .name {
+    font-size: 30px;
+  }
+  html body #app .home .container p {
+    font-size: 16px;
+    white-space: normal;
+    width: auto;
+    text-align: center;
+  }
+}
 html body #app nav {
   width: 16px;
   position: absolute;
@@ -170,13 +181,16 @@ html body #app nav .nav-item:hover {
 }
 @media screen and (max-width: 500px) {
   html body #app nav {
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     bottom: 40px;
     z-index: 11;
-    display: none;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    right: auto;
   }
   html body #app nav .nav-item {
     overflow: hidden;
@@ -184,7 +198,7 @@ html body #app nav .nav-item:hover {
     height: 20px;
     border: 1px solid white;
     border-radius: 50%;
-    margin: 0 20px ;
+    margin: 0 10px;
   }
 }
 html body #app .confession {
@@ -334,6 +348,25 @@ html body #app .confession .mask .container button:hover {
     width: 300px;
   }
 }
+@media screen and (max-width: 500px) {
+  html body #app .confession {
+    font-size: 12px;
+  }
+  html body #app .confession .mask {
+    padding: 0 15px;
+  }
+  html body #app .confession .mask .container h2 {
+    font-size: 18px;
+  }
+  html body #app .confession .mask .container .description {
+    width: auto;
+  }
+  html body #app .confession .mask .container button {
+    padding: 5px;
+    font-size: 12px;
+    width: 120px;
+  }
+}
 html body #app .todo {
   width: 100vw;
   height: 100vh;
@@ -479,6 +512,25 @@ html body #app .todo .mask .container button:hover {
   }
   html body #app .todo .mask .container .description {
     width: 300px;
+  }
+}
+@media screen and (max-width: 500px) {
+  html body #app .todo {
+    font-size: 12px;
+  }
+  html body #app .todo .mask {
+    padding: 0 15px;
+  }
+  html body #app .todo .mask .container h2 {
+    font-size: 18px;
+  }
+  html body #app .todo .mask .container .description {
+    width: auto;
+  }
+  html body #app .todo .mask .container button {
+    padding: 5px;
+    font-size: 12px;
+    width: 120px;
   }
 }
 html body #app .resume {
@@ -628,6 +680,25 @@ html body #app .resume .mask .container button:hover {
     width: 300px;
   }
 }
+@media screen and (max-width: 500px) {
+  html body #app .resume {
+    font-size: 12px;
+  }
+  html body #app .resume .mask {
+    padding: 0 15px;
+  }
+  html body #app .resume .mask .container h2 {
+    font-size: 18px;
+  }
+  html body #app .resume .mask .container .description {
+    width: auto;
+  }
+  html body #app .resume .mask .container button {
+    padding: 5px;
+    font-size: 12px;
+    width: 120px;
+  }
+}
 html body #app .music {
   width: 100vw;
   height: 100vh;
@@ -767,6 +838,25 @@ html body #app .music .mask .container button:hover {
   }
   html body #app .music .mask .container .description {
     width: 300px;
+  }
+}
+@media screen and (max-width: 500px) {
+  html body #app .music {
+    font-size: 12px;
+  }
+  html body #app .music .mask {
+    padding: 0 15px;
+  }
+  html body #app .music .mask .container h2 {
+    font-size: 18px;
+  }
+  html body #app .music .mask .container .description {
+    width: auto;
+  }
+  html body #app .music .mask .container button {
+    padding: 5px;
+    font-size: 12px;
+    width: 120px;
   }
 }
 html body #app .clock {
@@ -916,6 +1006,25 @@ html body #app .clock .mask .container button:hover {
     width: 300px;
   }
 }
+@media screen and (max-width: 500px) {
+  html body #app .clock {
+    font-size: 12px;
+  }
+  html body #app .clock .mask {
+    padding: 0 15px;
+  }
+  html body #app .clock .mask .container h2 {
+    font-size: 18px;
+  }
+  html body #app .clock .mask .container .description {
+    width: auto;
+  }
+  html body #app .clock .mask .container button {
+    padding: 5px;
+    font-size: 12px;
+    width: 120px;
+  }
+}
 html body #app .table {
   width: 100vw;
   height: 100vh;
@@ -970,6 +1079,10 @@ html body #app .table .resume .container .left h4 {
   text-align: right;
   margin-bottom: 20px;
 }
+html body #app .table .resume .container .left p {
+  text-align: right;
+  line-height: 20px;
+}
 html body #app .table .resume .container .right {
   width: 50%;
   padding-left: 20px;
@@ -1023,4 +1136,133 @@ html body #app .table .resume .container .right .git .degree {
   width: 180px;
   background: black;
   height: 2px;
+}
+@media screen and (max-width: 500px) {
+  html body #app .table .resume {
+    width: 100vw;
+    height: 100vh;
+    padding: 40px;
+    background: #ebebeb;
+    display: flex;
+    flex-direction: column;
+  }
+  html body #app .table .resume .name {
+    padding: 10px 20px;
+    border: 1px solid #333;
+  }
+  html body #app .table .resume .job {
+    margin: 20px 0;
+  }
+  html body #app .table .resume img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  html body #app .table .resume .container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20px;
+  }
+  html body #app .table .resume .container .left {
+    width: 50%;
+    padding-right: 20px;
+    border-right: 1px solid ;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  html body #app .table .resume .container .left h4 {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 20px;
+  }
+  html body #app .table .resume .container .right {
+    width: 50%;
+    padding-left: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  html body #app .table .resume .container .right h4 {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  html body #app .table .resume .container .right span {
+    width: 200px;
+    height: 1px;
+    background: #bfbfbf;
+    margin: 10px 0;
+    overflow: hidden;
+  }
+  html body #app .table .resume .container .right .html .degree {
+    width: 160px;
+    background: black;
+    height: 2px;
+  }
+  html body #app .table .resume .container .right .css .degree {
+    width: 180px;
+    background: black;
+    height: 2px;
+  }
+  html body #app .table .resume .container .right .js .degree {
+    width: 150px;
+    background: black;
+    height: 2px;
+  }
+  html body #app .table .resume .container .right .vue .degree {
+    width: 160px;
+    background: black;
+    height: 1px;
+  }
+  html body #app .table .resume .container .right .jquery .degree {
+    width: 180px;
+    background: black;
+    height: 2px;
+  }
+  html body #app .table .resume .container .right .webpack .degree {
+    width: 180px;
+    background: black;
+    height: 2px;
+  }
+  html body #app .table .resume .container .right .git .degree {
+    width: 180px;
+    background: black;
+    height: 2px;
+  }
+}
+@media screen and (max-width: 500px) {
+  html body #app .table .resume {
+    padding: 20px;
+  }
+  html body #app .table .resume img {
+    width: 60px;
+    height: 60px;
+  }
+  html body #app .table .resume .container .right span {
+    width: 40vw;
+  }
+  html body #app .table .resume .container .right .html .degree {
+    width: 35vw;
+  }
+  html body #app .table .resume .container .right .css .degree {
+    width: 32vw;
+  }
+  html body #app .table .resume .container .right .js .degree {
+    width: 30vw;
+  }
+  html body #app .table .resume .container .right .vue .degree {
+    width: 32vw;
+  }
+  html body #app .table .resume .container .right .jquery .degree {
+    width: 35vw;
+  }
+  html body #app .table .resume .container .right .webpack .degree {
+    width: 30vw;
+  }
+  html body #app .table .resume .container .right .git .degree {
+    width: 30vw;
+  }
 }

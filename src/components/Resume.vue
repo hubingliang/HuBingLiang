@@ -6,8 +6,8 @@
           <img src="../../static/head.jpg" alt="">
           <div class="container">
             <div class="left">
-                <h4>EDUCATION</h4>
-                <p>大三未毕业。。。</p>
+                <h4>INTRODUCE</h4>
+                <p>像素级还原设计稿，时刻关注前端前沿技术，平均每周一篇博客</p>
             </div>
             <div class="right">
                 <h4>SKILLS</h4>

@@ -149,6 +149,21 @@ html{
           }
         }
       }
+      @media screen and (max-width : 500px){
+        .home{
+          .container{
+            .name{
+              font-size: 30px;
+            }
+            p{
+              font-size: 16px;
+              white-space: normal;
+              width: auto;
+              text-align: center;
+            }
+          }
+        }
+      }
       nav{
         width: 16px;
         position: absolute;
@@ -171,20 +186,23 @@ html{
       }
       @media screen and (max-width : 500px) {
         nav {
+          width: auto;
           display: flex;
           justify-content: center;
           align-items: center;
           position: absolute;
           bottom: 40px;
           z-index: 11;
-          display: none;
+          transform: translate(-50%,-50%);
+          left: 50%;
+          right: auto;
           .nav-item{
             overflow: hidden;
             width: 20px;
             height: 20px;
             border: 1px solid white;
             border-radius: 50%;
-            margin: 0 20px ;
+            margin: 0 10px;
           }
         }
       } 
@@ -319,6 +337,27 @@ html{
           } 
         }
       }
+      @media screen and (max-width : 500px){
+        .confession{
+          font-size: 12px;
+          .mask{
+            padding: 0 15px;
+            .container{
+              h2{
+                font-size: 18px;
+              }
+              .description{
+                width: auto;
+              }
+              button{
+                padding: 5px;
+                font-size: 12px;
+                width: 120px;
+              }
+            }
+          }
+        }
+      }
       .todo{
         width: 100vw;
         height: 100vh;
@@ -448,6 +487,27 @@ html{
               }
             }
           } 
+        }
+      }
+      @media screen and (max-width : 500px){
+        .todo{
+          font-size: 12px;
+          .mask{
+            padding: 0 15px;
+            .container{
+              h2{
+                font-size: 18px;
+              }
+              .description{
+                width: auto;
+              }
+              button{
+                padding: 5px;
+                font-size: 12px;
+                width: 120px;
+              }
+            }
+          }
         }
       }
       .resume{
@@ -581,6 +641,27 @@ html{
           } 
         }
       }
+      @media screen and (max-width : 500px){
+        .resume{
+          font-size: 12px;
+          .mask{
+            padding: 0 15px;
+            .container{
+              h2{
+                font-size: 18px;
+              }
+              .description{
+                width: auto;
+              }
+              button{
+                padding: 5px;
+                font-size: 12px;
+                width: 120px;
+              }
+            }
+          }
+        }
+      }
       .music{
         width: 100vw;
         height: 100vh;
@@ -704,6 +785,27 @@ html{
               }
             }
           } 
+        }
+      }
+      @media screen and (max-width : 500px){
+        .music{
+          font-size: 12px;
+          .mask{
+            padding: 0 15px;
+            .container{
+              h2{
+                font-size: 18px;
+              }
+              .description{
+                width: auto;
+              }
+              button{
+                padding: 5px;
+                font-size: 12px;
+                width: 120px;
+              }
+            }
+          }
         }
       }
       .clock{
@@ -837,6 +939,27 @@ html{
           } 
         }
       }
+      @media screen and (max-width : 500px){
+        .clock{
+          font-size: 12px;
+          .mask{
+            padding: 0 15px;
+            .container{
+              h2{
+                font-size: 18px;
+              }
+              .description{
+                width: auto;
+              }
+              button{
+                padding: 5px;
+                font-size: 12px;
+                width: 120px;
+              }
+            }
+          }
+        }
+      }
       .table{
         width: 100vw;
         height: 100vh;
@@ -886,6 +1009,10 @@ html{
                 width: 100%;
                 text-align: right;
                 margin-bottom: 20px;
+              }
+              p{
+                text-align: right;
+                line-height: 20px;
               }
             }
             .right{
@@ -953,6 +1080,169 @@ html{
                   width: 180px;
                   background: black;
                   height: 2px;
+                }
+              }
+            }
+          }
+        }
+        @media screen and (max-width : 500px) {
+          .resume{
+            width: 100vw;
+            height: 100vh;
+            padding: 40px;
+            background: rgb(235, 235, 235);
+            display: flex;
+            flex-direction: column;
+            .name{
+              padding: 10px 20px;
+              border: 1px solid #333;
+            }
+            .job{
+              margin: 20px 0;
+            }
+            img{
+              width: 100px;
+              height: 100px;
+              border-radius: 50%;
+            }
+            .container{
+              flex: 1;
+              display: flex;
+              justify-content: center;
+              width: 100%;
+              padding-top: 20px;
+              .left{
+                width: 50%;
+                padding-right: 20px;
+                border-right: 1px solid ;
+                display: flex;
+                align-items: flex-end;
+                flex-direction: column;
+                h4{
+                  width: 100%;
+                  text-align: right;
+                  margin-bottom: 20px;
+                }
+              }
+              .right{
+                width: 50%;
+                padding-left: 20px;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                h4{
+                  width: 100%;
+                  text-align: left;
+                  margin-bottom: 20px;
+                }
+                span{
+                  width: 200px;
+                  height: 1px;
+                  background: rgb(191, 191, 191);
+                  margin: 10px 0;
+                  overflow: hidden;
+                }
+                .html{
+                  .degree{
+                    width: 160px;
+                    background: black;
+                    height: 2px;
+                  }
+                }
+                .css{
+                  .degree{
+                    width: 180px;
+                    background: black;
+                    height: 2px;
+                  }
+                }
+                .js{
+                  .degree{
+                    width: 150px;
+                    background: black;
+                    height: 2px;
+                  }
+                }
+                .vue{
+                  .degree{
+                    width: 160px;
+                    background: black;
+                    height: 1px;
+                  }
+                }
+                .jquery{
+                  .degree{
+                    width: 180px;
+                    background: black;
+                    height: 2px;
+                  }
+                }
+                .webpack{
+                  .degree{
+                    width: 180px;
+                    background: black;
+                    height: 2px;
+                  }
+                }
+                .git{
+                  .degree{
+                    width: 180px;
+                    background: black;
+                    height: 2px;
+                  }
+                }
+              }
+            }
+          }
+        } 
+      }
+      @media screen and (max-width : 500px){
+        .table{
+          .resume{
+            padding: 20px;
+            img{
+              width: 60px;
+              height: 60px;
+            }
+            .container{
+              .right{
+                span{
+                  width: 40vw;
+                }
+                .html{
+                  .degree{
+                    width: 35vw;
+                  }
+                }
+                .css{
+                  .degree{
+                    width: 32vw;
+                  }
+                }
+                .js{
+                  .degree{
+                    width: 30vw;
+                  }
+                }
+                .vue{
+                  .degree{
+                    width: 32vw;
+                  }
+                }
+                .jquery{
+                  .degree{
+                    width: 35vw;
+                  }
+                }
+                .webpack{
+                  .degree{
+                    width: 30vw;
+                  }
+                }
+                .git{
+                  .degree{
+                    width: 30vw;
+                  }
                 }
               }
             }
