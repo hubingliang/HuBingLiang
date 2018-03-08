@@ -9,7 +9,7 @@
                 <svg class="icon" aria-hidden="true" @click="jump('https://github.com/hubingliang')">
                     <use xlink:href="#icon-github1"></use>
                 </svg>
-                <svg class="icon" aria-hidden="true" @click="jump('http://www.jianshu.com/u/7cff123bc7d8')">
+                <svg class="icon" aria-hidden="true" @click="jump('http://brownhu.site/')">
                     <use xlink:href="#icon-blog"></use>
                 </svg>
             </div>
